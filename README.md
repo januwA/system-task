@@ -1,14 +1,14 @@
-## system-task
+## system-tasks
 
 获取系统进程列表，并且可以对某个进程进行kill, start, restart操作
 
 ## install
 ```sh
-$ npm i system-task
+$ npm i system-tasks
 ```
 
 ```js
-const { SystemTask } = require("system-task");
+const { SystemTask } = require("system-tasks");
 
 SystemTask.tasks().then(({ tasks, stdout }) => {
   console.log(tasks);
