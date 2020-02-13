@@ -1,6 +1,6 @@
 {
   "name": "system-tasks",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "获取系统进程列表，并且可以对某个进行kill, start, restart操作",
   "main": "./dist/system-task.js",
   "module": "./src/index.ts",

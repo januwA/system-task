@@ -39,6 +39,6 @@ declare class Task {
     /**
      * 重启所有相关的进程
      */
-    reStartLinks(): Promise<void>;
+    reStartLikes(): Promise<void>;
 }
 export {};

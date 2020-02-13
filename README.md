@@ -20,7 +20,7 @@ SystemTask.tasks().then(({ tasks, stdout }) => {
     p.killLikes();
     p.start();
     p.reStart();
-    p.reStartLinks();
+    p.reStartLikes();
   });
 })
 ```

@@ -115,7 +115,7 @@ class Task {
   /**
    * 重启所有相关的进程
    */
-  async reStartLinks() {
+  async reStartLikes() {
     try {
       await this.killLikes();
       await this.start();
