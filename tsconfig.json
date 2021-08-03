@@ -1,11 +1,8 @@
 {
 	"compilerOptions": {
-		"outDir": "./dist/",
-		"noImplicitAny": true,
+		"target": "ES2020",
 		"module": "commonjs",
-		"target": "es6",
-		"allowJs": true,
-		"incremental": true,
+		"outDir": "./dist/",
 		"strict": true,
 		"emitDecoratorMetadata": true,
 		"experimentalDecorators": true,
@@ -14,15 +11,13 @@
 		"resolveJsonModule": true,
 		"esModuleInterop": true,
 		"sourceMap": true,
-		"baseUrl": "./",
+		"baseUrl": "./src/",
 		"typeRoots": [
 			"node_modules/@types"
-		],
-		"paths": {}
+		]
 	},
 	"exclude": [
 		"node_modules",
-		"dist",
-		"test/**/*.test.ts"
+		"dist"
 	]
 }

@@ -1,6 +1,6 @@
 ## system-tasks
 
-获取系统进程列表，并且可以对某个进程进行kill, start, restart操作
+Get the list of system processes, and can perform kill, start, restart operations on a process
 
 ## install
 ```sh
@@ -16,11 +16,11 @@ SystemTask.tasks().then(({ tasks, stdout }) => {
     console.log(p.pname);
     console.log(p.pid);
     
-    p.kill();
-    p.killLikes();
-    p.start();
-    p.reStart();
-    p.reStartLikes();
+    // p.kill();
+    // p.killLikes();
+    // p.start();
+    // p.reStart();
+    // p.reStartLikes();
   });
 })
 ```

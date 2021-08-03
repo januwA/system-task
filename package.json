@@ -1,15 +1,12 @@
 {
   "name": "system-tasks",
-  "version": "0.2.0",
-  "description": "获取系统进程列表，并且可以对某个进行kill, start, restart操作",
-  "main": "./dist/system-task.js",
-  "module": "./src/index.ts",
-  "types": "./dist/src/index.d.ts",
+  "version": "0.3.0",
+  "description": "Get the list of system processes, and can perform kill, start, restart operations on a process",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
-    "build": "webpack",
-    "watch": "webpack --watch",
-    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\" \"src/**/*.html\" \"src/**/*.css\" \"src/**/*.json\"",
-    "test": "jest"
+    "build": "tsc",
+    "watch": "tsc -w"
   },
   "keywords": [
     "system-tasks",
@@ -25,15 +22,11 @@
     "url": "https://github.com/januwA/system-task.git"
   },
   "devDependencies": {
-    "@types/jest": "^24.0.25",
-    "@types/node": "^13.7.1",
-    "jest": "^24.9.0",
-    "prettier": "^1.19.1",
-    "ts-jest": "^24.3.0",
-    "ts-loader": "^6.2.1",
-    "ts-node": "^8.6.1",
-    "typescript": "^3.7.4",
-    "webpack": "^4.41.5",
-    "webpack-cli": "^3.3.10"
+    "@types/node": "^16.4.10",
+    "ts-node": "^10.1.0",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "ajanuw-completer": "^0.3.0"
   }
 }

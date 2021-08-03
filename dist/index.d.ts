@@ -6,13 +6,13 @@ export interface TasksResult {
     stderr: string;
     err: ExecException | null;
 }
-export declare class SystemTask {
-    static tasks(): Promise<TasksResult>;
-}
-export interface ITask {
+export interface ExecResult {
     error: ExecException | null;
     stdout: string;
     stderr: string;
+}
+export declare class SystemTask {
+    static tasks(): Promise<TasksResult>;
 }
 declare class Task {
     readonly p: string[];
@@ -23,15 +23,15 @@ declare class Task {
     /**
      * 杀死此进程
      */
-    kill(): Promise<ITask>;
+    kill(): Promise<ExecResult>;
     /**
      * 杀死和此进程一样name的所有进程
      */
-    killLikes(): Promise<unknown>;
+    killLikes(): Promise<ExecResult>;
     /**
      * 运行一个当前进程
      */
-    start(): Promise<unknown>;
+    start(executablePath?: string): Promise<ExecResult>;
     /**
      * 重启进程
      */
@@ -40,5 +40,6 @@ declare class Task {
      * 重启所有相关的进程
      */
     reStartLikes(): Promise<void>;
+    getExecutablePath(): Promise<string | undefined>;
 }
 export {};
